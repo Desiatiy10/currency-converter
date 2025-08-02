@@ -1,24 +1,24 @@
 package model
 
 type Currency struct {
-	code string
-	rate float64
-	name string
-	symbol string
+	Code   string
+	Rate   float64
+	Name   string
+	Symbol string
 }
 
 func (c *Currency) GetCode() string {
-    return c.code
+	return c.Code
 }
 
 func (c *Currency) GetRate() float64 {
-	return c.rate
-}	
+	return c.Rate
+}
 
 func (c *Currency) GetName() string {
-	return c.name
+	return c.Name
 }
 
 func (c *Currency) GetSymbol() string {
-	return c.symbol
+	return c.Symbol
 }

@@ -1,24 +1,24 @@
 package model
 
 type Conversion struct {
-	amount float64
-	fromCurrency *Currency
-	toCurrency *Currency
-	result float64
+	Amount       float64
+	FromCurrency *Currency
+	ToCurrency   *Currency
+	Result       float64
 }
 
 func (c *Conversion) GetAmount() float64 {
-	return c.amount
+	return c.Amount
 }
 
 func (c *Conversion) GetFromCurrency() *Currency {
-	return c.fromCurrency
+	return c.FromCurrency
 }
 
 func (c *Conversion) GetToCurrency() *Currency {
-	return c.toCurrency
+	return c.ToCurrency
 }
 
 func (c *Conversion) GetResult() float64 {
-	return c.result
+	return c.Result
 }
